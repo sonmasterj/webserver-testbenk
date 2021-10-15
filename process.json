@@ -1,0 +1,15 @@
+{
+    "apps" : [
+        {
+            "name"      : "genKey-server",
+            "max_memory_restart" : "300M",
+            "script"    : "/home/ubuntu/webserver/index.js",
+            "instances"  : "max",
+            "exec_mode"  : "cluster", 
+            "env" : {
+                "NODE_ENV" : "production",
+                "PORT" : 3000        
+            }
+        }
+    ]
+}
